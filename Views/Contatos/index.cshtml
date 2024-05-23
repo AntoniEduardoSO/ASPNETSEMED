@@ -1,0 +1,91 @@
+@model List<AnydeskModel>
+
+@{
+    ViewData["Title"] = "Listagem Contatos";
+}
+
+<link href="~/css/views/contatos/index.css" rel="stylesheet" />
+
+
+
+<div class="text-center">
+    <h1 class="display-4">Listagem de Anydesk</h1>
+    <br />
+</div>
+
+
+<div class="text-center">
+    <table class="display table table-striped table-hover table-dark caption " id="example">
+        <caption><a class="btn btn-success" role="button" asp-controller="Contatos" asp-action="Criar">Adicionar um novo
+                Anydesk</a></caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">ANYDESK</th>
+                <th scope="col">ESCOLA</th>
+                <th scope="col">PATRIMÔNIO</th>
+                <th scope="col"></th>
+                <th scope="col">Teste</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                for (int i = 0; i < Model.Count; i++)
+                {
+                    int j = i + 1;
+                    <tr>
+                        <th scope="row">@j</th>
+                        <td>@Model[i].Id</td>
+                        <td>@Model[i].Escola</td>
+                        <td>@Model[i].Patrimonio</td>
+                        <td>
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <a type="button" class="btn btn-primary" asp-route-id="@Model[i].Id" asp-controller="Contatos"
+                                    asp-action="Editar" role="button">Editar</a>
+                                <a type="button" class="btn btn-danger" asp-route-id="@Model[i].Id" asp-controller="Contatos"
+                                    asp-action="ApagarConfirmacao">Apagar</a>
+                            </div>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Launch demo modal
+                            </button>
+
+                        </td>
+
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+        <h5 class="modal-title" id="exampleModalLabel">Editar Anydesk</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        OI
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <br>
+
+
+    <script defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+    <script defer src="https://cdn.datatables.net/2.0.7/js/dataTables.bootstrap5.js"></script>
+    <script defer src="~/js/views/contatos/index.js"></script>
+
+</div>

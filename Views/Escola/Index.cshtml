@@ -1,0 +1,101 @@
+@model List<IGrouping<string, EscolaModel>>
+
+@{
+    ViewData["Title"] = "Escola";
+}
+
+<link rel="stylesheet" href="~/css/views/escola/index.css">
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark ">
+    <div class="container-fluid">
+        <img src="~/icons/views/escola/school_icon.svg" alt="Logo" width="35" height="38" class="d-inline-block align-text-top mx-3">
+        <a class="navbar-brand" href="#">Escolas da Rede Municipal de Maceió</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="a" >Adicionar Escola</a>
+                @* <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a> *@
+            </div>
+        </div>
+    </div>
+    <form class="d-flex me-2">
+        <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-custom-color" type="submit">Search</button>
+    </form>
+</nav>
+
+<div class="container" id="cardContainer">
+    @foreach (var group in Model)
+    {
+        if (group.Key != "1")
+        {
+            <br>
+        }
+        <h2 class="text-white"><img src="~/icons/views/escola/ra_icon.svg" alt="Logo" width="48" height="36" class="mx-2">Região Administrativa @group.Key.</h2>
+        <br>
+        <div class="row g-3">
+            @foreach (var escola in group)
+            {
+                <div class="col-md-4 card-item" data-escola="@escola.Escola">
+                    <div class="card">
+                        <img class="bd-placeholder-img card-img-top"  height="180" src="~/fotos/escola/@escola.Imagem">
+                        <div class="card-body">
+                            <div class="text-center">
+                                <h5 class="card-title">@escola.Escola</h5>
+                                <p class="card-text">@escola.Endereco</p>
+                            </div>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="text-center">Diretora: @escola.Diretor</div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="text-center">Contato: @escola.Telefone</div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="text-center">Bairro: @escola.Bairro</div>
+                            </li>
+                            <li class="list-group-item">
+                                <div class="text-center">Circuito: @escola.Circuito</div>
+                            </li>
+                           <li class="list-group-item d-flex align-items-center justify-content-center">
+                                <div class="text-center">IP: @escola.Ip</div>
+                                <button type="button" class="btn-ping btn" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="~/css/Views/Escola/ping.svg" alt=""></button>
+                            </li>
+
+                        </ul>
+                        <a href="#" class="btn btn-custom-color">Ver Detalhes <img src="~/icons/search.svg" alt="Logo" width="23" height="25" class="d-inline-block align-text-top mx-1 bs-white"></a>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="~/js/views/escola/index.js"></script>

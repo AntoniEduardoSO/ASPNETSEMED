@@ -1,0 +1,77 @@
+@model AnydeskModel;
+
+@{
+  ViewData["Title"] = "Cadastro Anydesk";
+}
+
+
+<div class="text-center">
+  <h1 class="display-4">Cadastrar Contato</h1>
+</div>
+
+<br>
+<br>
+<div class="text-center">
+  <form asp-controller="Contatos" asp-action="Criar" method="post">
+    <div class="mb-3">
+      <label class="display-6">Anydesk</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Id" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="display-6">Escola</label>
+      <br>
+      <br>
+      <select asp-for="Escola" class="js-example-basic-single" id="escola-select" required></select>
+    </div>
+
+    <div class="mb-3">
+      <label class="display-6">Patrimônio</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Patrimonio" class="form-control" required>
+    </div>
+
+    <a class="btn btn-secondary" asp-controller="Contatos" asp-action="Index" role="button">Voltar</a>
+    <button type="submit" class="btn btn-success">Cadastrar</button>
+  </form>
+</div>
+
+<script>
+  $(document).ready(function () {
+    fetch('http://localhost:5114/Escola/Api')
+        .then(response => response.json()) 
+        .then(data => {
+            // Agrupar os dados por 'ra'
+            const groupedData = data.reduce((acc, item) => {
+                if (!acc[item.ra]) {
+                    acc[item.ra] = [];
+                }
+                acc[item.ra].push({
+                    id: item.id,
+                    text: item.escola
+                });
+                return acc;
+            }, {});
+
+            // Criar a estrutura para o select2 com optgroup
+            const selectData = Object.keys(groupedData).map(ra => ({
+                text: `RA ${ra}`,
+                children: groupedData[ra]
+            }));
+
+            $('.js-example-basic-single').select2({
+                data: selectData,
+                width: '100%',
+                placeholder: "Escolha uma escola",
+            });
+        })
+        .catch(error => {
+            console.error('Erro ao buscar dados da API:', error);
+        });
+});
+
+
+</script>

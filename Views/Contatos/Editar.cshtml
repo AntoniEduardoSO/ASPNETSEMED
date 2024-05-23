@@ -1,0 +1,37 @@
+@model AnydeskModel
+
+@{
+    ViewData["Title"] = "Editar Contatos";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Editar Contato</h1>
+</div>
+
+<div class="text-center">
+  <form asp-controller="Contatos" asp-action="Alterar" method="post">
+    <div class="mb-3">
+      <label  class="display-6">Anydesk</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Id" class="form-control" >
+    </div>
+
+    <div class="mb-3">
+      <label  class="display-6">Escola</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Escola" class="form-control" >
+    </div>
+    <div class="mb-3">
+      <label  class="display-6">Patrimônio</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Patrimonio" class="form-control" >
+    </div>
+
+    <a class="btn btn-secondary" asp-controller="Contatos" asp-action="Index" role="button">Voltar</a>
+    <button type="submit" class="btn btn-primary btn-block">Alterar</button>
+</form>
+
+</div>

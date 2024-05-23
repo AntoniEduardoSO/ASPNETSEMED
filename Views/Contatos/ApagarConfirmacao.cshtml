@@ -1,0 +1,13 @@
+@model AnydeskModel;
+
+@{
+    ViewData["Title"] = "Apagar Contato";
+}
+
+<div class="text-center">
+    <h3>Deseja realmente apagar o Anydesk @Model.Id, da Escola @Model.Escola, e o Patrimônio @Model.Patrimonio</h1>
+</div>
+
+
+<a class="btn btn-primary btn-block" role="button" asp-controller="Contatos" asp-action="Index">Cancelar a exclusão</a>
+<a class="btn btn-danger btn-block" asp-route-id="@Model.Id" asp-controller="Contatos" asp-action="Apagar" role="button">Confirmar a exclusão</a>

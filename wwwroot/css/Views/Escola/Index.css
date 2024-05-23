@@ -1,0 +1,81 @@
+
+
+.container{
+    background-color: #191F2C;
+    padding-top: 1rem;
+    border-radius: 8px;
+}
+
+.navbar{
+    color: white;
+    background-color: #2B303D;
+}
+
+.card{
+    width: 100%;
+    background-color: #2B303D;
+    box-shadow: 0 4px 8px #131821;
+    color: white;
+    min-height: 600px;
+}
+
+
+
+.btn-ping {
+    background-color: #e02358;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.custom-bg:hover{
+    color: #ffffff; /* Cor do texto quando hover */
+    background-color: #c01e4c; /* Cor de fundo quando hover */
+    border-color: #c01e4c;
+}
+
+
+.list-group-item{
+    color: white;
+    background-color: #2B303D;
+}
+
+
+.card-body {
+    flex-grow: 1;
+}
+
+
+.row.g-3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    min-height: 100px;
+}
+
+.btn-custom-color {
+    color: white; 
+    border-color: #E02358;
+    background-color: #E02358; 
+
+}
+
+.btn-custom-color:hover {
+    color: #ffffff; /* Cor do texto quando hover */
+    background-color: #c01e4c; /* Cor de fundo quando hover */
+    border-color: #c01e4c; /* Cor da borda quando hover */
+}
+/* 
+ */
+ @media (min-height: 600px) {
+    .card {
+        font-size: 17px;
+    }
+}
