@@ -1,0 +1,82 @@
+@model ImpressoraModel;
+
+@{
+  ViewData["Title"] = "Cadastro Anydesk";
+}
+
+
+<div class="text-center">
+  <h1 class="display-4">Cadastrar Contato</h1>
+</div>
+
+<br>
+<br>
+<div class="text-center">
+  <form asp-controller="Impressora" asp-action="Criar" method="post">
+    <div class="mb-3">
+      <label class="display-6">ID</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Id" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="display-6">Nome</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Nome" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="display-6">Setor</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Setor" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="display-6">Sigla</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Sigla" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="display-6">Modelo</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Modelo" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="display-6">IP</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Ip" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="display-6">PrintPage</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Printpage" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <label class="display-6">Status</label>
+      <br>
+      <br>
+      <input type="text" asp-for="Status" class="form-control" required>
+    </div>
+
+    <a class="btn btn-secondary" asp-controller="Contatos" asp-action="Index" role="button">Voltar</a>
+    <button type="submit" class="btn btn-success">Cadastrar</button>
+  </form>
+</div>
+
+
+<style>
+    body{
+        color: white;
+    }
+</style>

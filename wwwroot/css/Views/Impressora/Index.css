@@ -1,0 +1,15 @@
+.img-status-false {
+    background-color: red; /* Exemplo de estilo para status false */
+}
+
+.img-status-true {
+    background-color: green; /* Exemplo de estilo para status true */
+}
+
+.row {
+    color: white;
+}
+
+.info-impress {
+    color: white;
+}

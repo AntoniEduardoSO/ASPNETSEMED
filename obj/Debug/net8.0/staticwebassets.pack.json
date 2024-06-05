@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets\\Icons\\Views\\Escola\\school_icon.svg"
     },
     {
+      "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\Icons\\check.svg",
+      "PackagePath": "staticwebassets\\Icons\\check.svg"
+    },
+    {
+      "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\Icons\\close.svg",
+      "PackagePath": "staticwebassets\\Icons\\close.svg"
+    },
+    {
       "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\Icons\\search.svg",
       "PackagePath": "staticwebassets\\Icons\\search.svg"
     },
@@ -33,8 +41,8 @@
       "PackagePath": "staticwebassets\\css\\Views\\Escola\\ping.svg"
     },
     {
-      "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\css\\Views\\aa",
-      "PackagePath": "staticwebassets\\css\\Views"
+      "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\css\\Views\\Impressora\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Impressora\\Index.css"
     },
     {
       "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\css\\site.css",
@@ -67,6 +75,10 @@
     {
       "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\js\\Views\\Escola\\Index.js",
       "PackagePath": "staticwebassets\\js\\Views\\Escola\\Index.js"
+    },
+    {
+      "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\js\\Views\\Impressora\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Views\\Impressora\\Index.js"
     },
     {
       "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\js\\site.js",

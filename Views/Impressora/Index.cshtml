@@ -1,0 +1,62 @@
+@model List<ImpressoraModel>
+
+@{
+    ViewData["Title"] = "Escola";
+}
+
+<link href="~/css/views/impressora/index.css" rel="stylesheet" />
+
+<div class="text-center">
+    <h1 class="display-4 info-impress">Listagem de Impressora</h1>
+    <br />
+</div>
+
+<div class="text-center">
+    <table class="display table table-striped table-hover table-dark caption" id="example">
+        <caption>
+            <a class="btn btn-success" role="button" asp-controller="Impressora" asp-action="Criar">Adicionar Impressora</a>
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">ID</th>
+                <th scope="col">NOME</th>
+                <th scope="col">SETOR</th>
+                <th scope="col">SIGLA</th>
+                <th scope="col">MODELO</th>
+                <th scope="col">IP</th>
+                <th scope="col">PRINTPAGE</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                for (int i = 0; i < Model.Count; i++)
+                {
+                    int j = i + 1;
+                    <tr class="@(Model[i].Status == false ? "white-text" : "")">
+                        <th scope="row">@j</th>
+                        <td>@Model[i].Id</td>
+                        <td>@Model[i].Nome</td>
+                        <td>@Model[i].Setor</td>
+                        <td>@Model[i].Sigla</td>
+                        <td>@Model[i].Modelo</td>
+                        <td><a type="button" class="btn btn-light" href="http://@Model[i].Ip" target="_blank">@Model[i].Ip</a></td> 
+                        <td>@Model[i].Printpage</td>
+                        <td>
+                            <img class="@(Model[i].Status == false ? "img-status-false" : "img-status-true")"
+                                 src="@Url.Content(Model[i].Status == false ? "~/icons/close.svg" : "~/icons/check.svg")" alt="">
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+    <script defer src="https://cdn.datatables.net/2.0.7/js/dataTables.bootstrap5.js"></script>
+    <script defer src="~/js/views/impressora/index.js"></script>
+</div>
+
