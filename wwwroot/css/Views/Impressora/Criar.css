@@ -28,6 +28,12 @@
     background-color:  #191F2C;
 }
 
+.img-fluid {
+    height: 100%;
+    object-fit: cover;
+    min-width: 500px;
+}
+
 /* .card{
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
@@ -35,10 +41,16 @@
     margin-right: 0.5rem;
 } */
 
-.card-body{
+.card-body
+{
     color: white;
+    margin-left: 5rem;
+}
+
+.col{
     background-color:  #2B303D;
-    margin-left: 1.5rem;
+    
+    /* margin-left: 3rem; */
 }
 
 .form-control{

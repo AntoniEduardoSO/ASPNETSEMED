@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASPNETSEMED")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb27ef1b1dfb5061d4c27a62a66c82fe519009b4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2e7eff264a01894d8e70e2e0eeb116f268adbe7f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASPNETSEMED")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASPNETSEMED")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
