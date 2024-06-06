@@ -9,71 +9,71 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ASPNETSEMED
 build_property.RootNamespace = ASPNETSEMED
-build_property.ProjectDir = C:\Users\antoniooliveira\Documents\ASPNET\aspnetsemed\
+build_property.ProjectDir = C:\Users\HailK\OneDrive\Área de Trabalho\Trabalho\SEMAP\aspnetsemed\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\antoniooliveira\Documents\ASPNET\aspnetsemed
+build_property.MSBuildProjectDirectory = C:\Users\HailK\OneDrive\Área de Trabalho\Trabalho\SEMAP\aspnetsemed
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Contatos/ApagarConfirmacao.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Contatos/ApagarConfirmacao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b3NcQXBhZ2FyQ29uZmlybWFjYW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Contatos/Criar.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Contatos/Criar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b3NcQ3JpYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Contatos/Editar.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Contatos/Editar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b3NcRWRpdGFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Contatos/index.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Contatos/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGF0b3NcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Escola/Api.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Escola/Api.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNjb2xhXEFwaS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Escola/Index.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Escola/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNjb2xhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Home/Index.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Home/Privacy.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Impressora/Criar.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Impressora/Criar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzc29yYVxDcmlhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Impressora/Index.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Impressora/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1wcmVzc29yYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Shared/Error.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/_ViewImports.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/_ViewStart.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/antoniooliveira/Documents/ASPNET/aspnetsemed/Views/Shared/_Layout.cshtml]
+[C:/Users/HailK/OneDrive/Área de Trabalho/Trabalho/SEMAP/aspnetsemed/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-1lsduiyqah

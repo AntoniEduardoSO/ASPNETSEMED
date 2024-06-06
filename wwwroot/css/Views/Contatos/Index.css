@@ -34,3 +34,12 @@
     background-color: #ff5252; 
     border-color: #ff5252;
 }
+
+
+.row {
+    color: white;
+}
+
+.h1, h1 {
+    color: white;
+}

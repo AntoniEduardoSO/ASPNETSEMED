@@ -4,79 +4,168 @@
   ViewData["Title"] = "Cadastro Anydesk";
 }
 
+<link href="~/css/views/impressora/criar.css" rel="stylesheet" />
 
 <div class="text-center">
-  <h1 class="display-4">Cadastrar Contato</h1>
+  <h1 class="display-4">Cadastrar Impressora</h1>
 </div>
 
 <br>
-<br>
-<div class="text-center">
-  <form asp-controller="Impressora" asp-action="Criar" method="post">
-    <div class="mb-3">
-      <label class="display-6">ID</label>
-      <br>
-      <br>
-      <input type="text" asp-for="Id" class="form-control" required>
-    </div>
 
-    <div class="mb-3">
-      <label class="display-6">Nome</label>
-      <br>
-      <br>
-      <input type="text" asp-for="Nome" class="form-control" required>
+<div class="card mb-3">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="~/fotos/impressora/impressora.jpg" class="img-fluid rounded-start h-100" alt="...">
     </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <div class="text-center">
+          <form asp-controller="Impressora" asp-action="Criar" method="post">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label class="display-6">ID</label>
+                <input type="text" asp-for="Id" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label class="display-6">Nome</label>
+                <input type="text" asp-for="Nome" class="form-control" required>
+              </div>
+            </div>
 
-    <div class="mb-3">
-      <label class="display-6">Setor</label>
-      <br>
-      <br>
-      <input type="text" asp-for="Setor" class="form-control" required>
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label class="display-6">Setor</label>
+                <input type="text" asp-for="Setor" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label class="display-6">Sigla</label>
+                <input type="text" asp-for="Sigla" class="form-control">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label class="display-6">Modelo</label>
+                <input type="text" asp-for="Modelo" class="form-control" required>
+              </div>
+              <div class="col-md-6">
+                <label class="display-6">IP</label>
+                <input type="text" asp-for="Ip" class="form-control">
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label class="display-6">PrintPage</label>
+                <input type="text" asp-for="Printpage" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label class="display-6">Status</label>
+                <input type="text" asp-for="Status" class="form-control" required>
+              </div>
+            </div>
+
+            <a class="btn btn-secondary" asp-controller="Contatos" asp-action="Index" role="button">Voltar</a>
+            <button type="submit" class="btn btn-success">Cadastrar</button>
+          </form>
+        </div>
+      </div>
     </div>
-
-    <div class="mb-3">
-      <label class="display-6">Sigla</label>
-      <br>
-      <br>
-      <input type="text" asp-for="Sigla" class="form-control">
-    </div>
-
-    <div class="mb-3">
-      <label class="display-6">Modelo</label>
-      <br>
-      <br>
-      <input type="text" asp-for="Modelo" class="form-control" required>
-    </div>
-
-    <div class="mb-3">
-      <label class="display-6">IP</label>
-      <br>
-      <br>
-      <input type="text" asp-for="Ip" class="form-control">
-    </div>
-
-    <div class="mb-3">
-      <label class="display-6">PrintPage</label>
-      <br>
-      <br>
-      <input type="text" asp-for="Printpage" class="form-control">
-    </div>
-
-    <div class="mb-3">
-      <label class="display-6">Status</label>
-      <br>
-      <br>
-      <input type="text" asp-for="Status" class="form-control" required>
-    </div>
-
-    <a class="btn btn-secondary" asp-controller="Contatos" asp-action="Index" role="button">Voltar</a>
-    <button type="submit" class="btn btn-success">Cadastrar</button>
-  </form>
+  </div>
 </div>
 
 
-<style>
-    body{
-        color: white;
-    }
-</style>
+<br>
+
+
+
+<div class="row my-6">
+
+
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Special title treatment</h5>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+
+@* <div class="text-center">
+<form asp-controller="Impressora" asp-action="Criar" method="post">
+<div class="mb-3">
+<label class="display-6">ID</label>
+<br>
+<br>
+<input type="text" asp-for="Id" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="display-6">Nome</label>
+<br>
+<br>
+<input type="text" asp-for="Nome" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="display-6">Setor</label>
+<br>
+<br>
+<input type="text" asp-for="Setor" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="display-6">Sigla</label>
+<br>
+<br>
+<input type="text" asp-for="Sigla" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="display-6">Modelo</label>
+<br>
+<br>
+<input type="text" asp-for="Modelo" class="form-control" required>
+</div>
+
+<div class="mb-3">
+<label class="display-6">IP</label>
+<br>
+<br>
+<input type="text" asp-for="Ip" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="display-6">PrintPage</label>
+<br>
+<br>
+<input type="text" asp-for="Printpage" class="form-control">
+</div>
+
+<div class="mb-3">
+<label class="display-6">Status</label>
+<br>
+<br>
+<input type="text" asp-for="Status" class="form-control" required>
+</div>
+
+<a class="btn btn-secondary" asp-controller="Contatos" asp-action="Index" role="button">Voltar</a>
+<button type="submit" class="btn btn-success">Cadastrar</button>
+</form>
+</div> *@
