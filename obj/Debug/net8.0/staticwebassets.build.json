@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "I2wOE07gOGpxAQVWSQRBTusLaCGfEO0KoLv+yI7Z9ng=",
+  "Hash": "Doq43XDSgJltT/6lFgtbwnwBVK7i+288PL5fkxVF7Ak=",
   "Source": "ASPNETSEMED",
   "BasePath": "_content/ASPNETSEMED",
   "Mode": "Default",
@@ -224,6 +224,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\fotos\\escola\\no_image_photo.png"
+    },
+    {
+      "Identity": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\fotos\\impressora\\cadastro_impressora.png",
+      "SourceId": "ASPNETSEMED",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\",
+      "BasePath": "_content/ASPNETSEMED",
+      "RelativePath": "fotos/impressora/cadastro_impressora.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fotos\\impressora\\cadastro_impressora.png"
     },
     {
       "Identity": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\fotos\\impressora\\impressora.jpg",

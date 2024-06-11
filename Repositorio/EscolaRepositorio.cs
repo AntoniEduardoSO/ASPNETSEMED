@@ -54,5 +54,10 @@ namespace ASPNETSEMED.Repositorio
             return item;
         }
 
+        public EscolaModel ListarPorIp(string ip)
+        {
+            var item = _context.Escola.FirstOrDefault(x => x.Ip == ip) ?? throw new Exception($"Nenhum registro encontrado com o ID {ip}");
+            return item;
+        }
     }
 }

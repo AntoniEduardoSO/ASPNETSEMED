@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\ASPNETSEMED\\ASPNETSEMED.csproj": {}
+    "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\ASPNETSEMED.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\ASPNETSEMED\\ASPNETSEMED.csproj": {
+    "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\ASPNETSEMED.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\ASPNETSEMED\\ASPNETSEMED.csproj",
+        "projectUniqueName": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\ASPNETSEMED.csproj",
         "projectName": "ASPNETSEMED",
-        "projectPath": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\ASPNETSEMED\\ASPNETSEMED.csproj",
+        "projectPath": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\ASPNETSEMED.csproj",
         "packagesPath": "C:\\Users\\antoniooliveira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\ASPNETSEMED\\obj\\",
+        "outputPath": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\antoniooliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,7 +53,13 @@
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

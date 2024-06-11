@@ -1,0 +1,52 @@
+@model List<AlooModel>
+
+@{
+    ViewData["Title"] = "Listagem Aloo";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Listagem de Anydesk</h1>
+    <br />
+</div>
+
+
+<div class="text-center">
+    <table class="display table table-striped table-hover table-dark caption " id="example">
+        <caption><a class="btn btn-success" role="button" asp-controller="Contatos" asp-action="Criar">Adicionar um novo
+                Anydesk</a></caption>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">DIAS</th>
+                <th scope="col">ESCOLA</th>
+                <th scope="col">CIRCUITO</th>
+                <th scope="col">IP</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                for (int i = 0; i < Model.Count; i++)
+                {
+                    int j = i + 1;
+                    <tr>
+                        <th scope="row">@j</th>
+                        <td>
+                        @{
+                            var diferenca = DateTime.UtcNow - Model[i].Criacao;
+                            var formatoDesejado = string.Format("{0} dias, {1} horas, {2} minutos, {3} segundos", 
+                                        diferenca.Days, 
+                                        diferenca.Hours, 
+                                        diferenca.Minutes, 
+                                        diferenca.Seconds);
+                            @formatoDesejado
+                        }
+                        </td>
+                        <td>@Model[i].Escola</td>
+                        <td>@Model[i].Circuito</td>
+                        <td>@Model[i].Ip</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>

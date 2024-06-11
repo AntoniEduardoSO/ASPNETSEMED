@@ -14,6 +14,7 @@ builder.Services.AddEntityFrameworkNpgsql()
 builder.Services.AddScoped<IAnydeskRepositorio, AnydeskRepositorio>();
 builder.Services.AddScoped<IEscolaRepositorio, EscolaRepositorio>();
 builder.Services.AddScoped<IImpressoraRepositorio, ImpressoraRepositorio>();
+builder.Services.AddScoped<IAlooRepositorio, AlooRepositorio>();
 
 var app = builder.Build();
 

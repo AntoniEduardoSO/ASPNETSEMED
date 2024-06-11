@@ -6,12 +6,14 @@ namespace ASPNETSEMED.Data
 {
     public class BancoContext : DbContext
     {
+        public BancoContext()
+        {
+        }
+
         public BancoContext(DbContextOptions<BancoContext> options) : base(options)
         {
 
         }
-        
-        
 
         public DbSet<AnydeskModel> Anydesk { get; set; }
 
@@ -19,6 +21,8 @@ namespace ASPNETSEMED.Data
          public DbSet<ImpressoraModel> Impressora { get; set; }
 
         public DbSet<EscolaModel> Escola {get;set;}
+
+        public DbSet<AlooModel> Aloo {get;set;}
 
 
          protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -37,11 +41,16 @@ namespace ASPNETSEMED.Data
                     .HasColumnType("inet");
             });
 
-            modelBuilder.Entity<ImpressoraModel>(entity =>
-            {
+            modelBuilder.Entity<ImpressoraModel>(entity =>{
                 entity.Property(e => e.Ip)
                     .HasConversion(inetConverter)
                     .HasColumnType("inet");
+            });
+
+            modelBuilder.Entity<AlooModel>(entity => {
+                entity.Property(e => e.Ip)
+                .HasConversion(inetConverter)
+                .HasColumnType("inet");
             });
         }
     }

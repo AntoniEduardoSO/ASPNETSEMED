@@ -65,6 +65,10 @@
       "PackagePath": "staticwebassets\\fotos\\escola\\no_image_photo.png"
     },
     {
+      "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\fotos\\impressora\\cadastro_impressora.png",
+      "PackagePath": "staticwebassets\\fotos\\impressora\\cadastro_impressora.png"
+    },
+    {
       "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\fotos\\impressora\\impressora.jpg",
       "PackagePath": "staticwebassets\\fotos\\impressora\\impressora.jpg"
     },

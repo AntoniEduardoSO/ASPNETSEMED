@@ -15,6 +15,8 @@ namespace ASPNETSEMED.Models
         public required bool Status {get;set;}
 
         public string? Printpage {get;set;}
+
+        public string? Localizacao {get;set;}
     }
 }
 
