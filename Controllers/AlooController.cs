@@ -28,5 +28,13 @@ public class AlooController : Controller
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
 
-   
+
+    public IActionResult AtualizarTabelaAloos()
+    {
+        _alooRepositorio.ListarPorConnectionNotFound();
+        List<AlooModel> aloos = _alooRepositorio.ListaAloo();
+        return PartialView("_AloosTable", aloos);
+    }
+
+
 }

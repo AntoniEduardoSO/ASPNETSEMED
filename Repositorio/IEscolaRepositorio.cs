@@ -11,7 +11,7 @@ namespace ASPNETSEMED.Repositorio
         EscolaModel Atualizar(EscolaModel model);
 
 
-        EscolaModel ListarPorIp(string ip);
+        Task<EscolaModel> ListarPorIp(string ip);
 
     }
 }

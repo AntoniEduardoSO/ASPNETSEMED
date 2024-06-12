@@ -1,10 +1,11 @@
 using ASPNETSEMED.Data;
 using ASPNETSEMED.Models;
-using System.Net.NetworkInformation;
-using System.Collections.Generic;
-using Microsoft.IdentityModel.Tokens;
 using Microsoft.EntityFrameworkCore;
-
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.NetworkInformation;
+using System.Threading.Tasks;
 
 namespace ASPNETSEMED.Repositorio
 {
@@ -19,96 +20,88 @@ namespace ASPNETSEMED.Repositorio
             _escolaRepositorio = escolaRepositorio;
         }
 
-        public AlooModel ListarPorId(Guid id)
+        public async Task<AlooModel> ListarPorId(Guid id)
         {
             if (id == Guid.Empty)
             {
                 throw new ArgumentException("O ID não pode ser nulo ou vazio", nameof(id));
             }
 
-            var item = _context.Aloo.FirstOrDefault(x => x.Id == id) ?? throw new Exception($"Nenhum registro encontrado com o ID {id}");
+            var item = await _context.Aloo.FirstOrDefaultAsync(x => x.Id == id) ?? throw new Exception($"Nenhum registro encontrado com o ID {id}");
             return item;
         }
 
         public List<AlooModel> ListaAloo()
         {
-            using (var context = new BancoContext()) // Cria um novo contexto para esta operação
-            {
-                return context.Aloo.ToList();
-            }
+            return _context.Aloo.ToList();
         }
 
-        public AlooModel Adicionar(string ip)
+        public async Task<AlooModel> Adicionar(string ip)
         {
-            EscolaModel escola = _escolaRepositorio.ListarPorIp(ip) ?? throw new Exception("Escola com ip nao encontrada");
+            EscolaModel escola = await _escolaRepositorio.ListarPorIp(ip) ?? throw new Exception("Escola com IP não encontrada");
 
             if (escola.Escola == null || escola.Ip == null || escola.Circuito == null)
             {
                 throw new Exception("Uma ou mais propriedades da escola são nulas");
             }
 
-            using (var context = new BancoContext())
+            AlooModel aloo = new()
             {
-                AlooModel aloo = new()
-                {
-                    Id = Guid.NewGuid(),
-                    Criacao = DateTime.UtcNow,
-                    Escola = escola.Escola,
-                    Ip = escola.Ip,
-                    Circuito = escola.Circuito,
-                };
+                Id = Guid.NewGuid(),
+                Criacao = DateTime.UtcNow,
+                Escola = escola.Escola,
+                Ip = escola.Ip,
+                Circuito = escola.Circuito,
+            };
 
-                _context.Aloo.Add(aloo);
-                _context.SaveChanges();
-                return aloo;
-            }
+            _context.Aloo.Add(aloo);
+            await _context.SaveChangesAsync();
+            return aloo;
         }
-
         public void ListarPorConnectionNotFound()
         {
             List<EscolaModel> escolas = _context.Escola.ToList();
 
-            Parallel.ForEach( escolas, escola => {
+            Parallel.ForEach(escolas, async escola =>
+            {
                 if (escola.Ip != null)
                 {
                     PingHost(escola.Ip);
                 }
             });
-           
         }
 
-        private void PingHost(string ip)
+        private async Task PingHost(string ip)
         {
             bool pingable = false;
 
-            Ping pinger = new();
+            using (Ping pinger = new())
+            {
+                try
+                {
+                    PingReply reply = await pinger.SendPingAsync(ip);
+                    pingable = reply.Status == IPStatus.Success;
+                }
+                catch (PingException ex)
+                {
+                    Console.WriteLine($"PINGER: {ex.Message}");
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("" + ex.Message);
+                }
+            }
 
-            try
+            if (!pingable)
             {
-                PingReply reply = pinger.Send(ip);
-                pingable = reply.Status == IPStatus.Success;
-            }
-            catch (PingException ex)
-            {
-                Console.WriteLine($"PINGER: {ex.Message}");
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("" + ex.Message);
-            }
-
-            if(!pingable){
-                Console.WriteLine("dentro do pingable");
-                AlooAlreadyExist(ip);
+                if (await AlooAlreadyExist(ip))
+                    await Adicionar(ip);
             }
         }
 
-        private void AlooAlreadyExist(string ip)
+        private async Task<bool> AlooAlreadyExist(string ip)
         {
-            if(_context.Aloo.FirstOrDefaultAsync(x => x.Ip == ip).Result == null){
-                Adicionar(ip);
-            }
+            return await _context.Aloo.FirstOrDefaultAsync(x => x.Ip == ip) != null;
         }
-
     }
 }

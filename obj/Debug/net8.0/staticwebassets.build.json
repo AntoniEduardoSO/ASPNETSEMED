@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Doq43XDSgJltT/6lFgtbwnwBVK7i+288PL5fkxVF7Ak=",
+  "Hash": "comYyPV1bPu3KLOu6YIRv0Dyv9fzQ5Jq/rvUQSieOQA=",
   "Source": "ASPNETSEMED",
   "BasePath": "_content/ASPNETSEMED",
   "Mode": "Default",
@@ -72,6 +72,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\css\\Views\\Aloo\\Index.css",
+      "SourceId": "ASPNETSEMED",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\",
+      "BasePath": "_content/ASPNETSEMED",
+      "RelativePath": "css/Views/Aloo/Index.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Views\\Aloo\\Index.css"
     },
     {
       "Identity": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\css\\Views\\Contatos\\Index.css",
@@ -414,6 +433,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\js\\Views\\Aloo\\Index.js",
+      "SourceId": "ASPNETSEMED",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\",
+      "BasePath": "_content/ASPNETSEMED",
+      "RelativePath": "js/Views/Aloo/Index.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Views\\Aloo\\Index.js"
     },
     {
       "Identity": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\js\\Views\\Contatos\\Criar.js",

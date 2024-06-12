@@ -1,5 +1,6 @@
 using ASPNETSEMED.Data;
 using ASPNETSEMED.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ASPNETSEMED.Repositorio
 {
@@ -50,13 +51,21 @@ namespace ASPNETSEMED.Repositorio
                 throw new ArgumentException("O ID não pode ser nulo ou vazio", nameof(nome));
             }
 
-            var item = _context.Escola.FirstOrDefault(x => x.Escola == nome) ?? throw new Exception($"Nenhum registro encontrado com o ID {nome}");
+            var item = _context.Escola.FirstOrDefault(x => x.Id == nome) ?? throw new Exception($"Nenhum registro encontrado com o ID {nome}");
+            
             return item;
         }
 
-        public EscolaModel ListarPorIp(string ip)
+        public async Task<EscolaModel> ListarPorIp(string ip)
         {
-            var item = _context.Escola.FirstOrDefault(x => x.Ip == ip) ?? throw new Exception($"Nenhum registro encontrado com o ID {ip}");
+            if(string.IsNullOrEmpty(ip))
+            {
+                throw new ArgumentException("O IP NÃO PODE SER NULO", nameof(ip));
+            }
+
+
+            var item = await _context.Escola.FirstOrDefaultAsync(x => x.Ip == ip) ?? throw new Exception("Nenhum registro");
+
             return item;
         }
     }

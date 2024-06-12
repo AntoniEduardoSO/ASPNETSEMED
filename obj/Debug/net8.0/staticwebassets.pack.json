@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\Icons\\site.svg"
     },
     {
+      "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\css\\Views\\Aloo\\Index.css",
+      "PackagePath": "staticwebassets\\css\\Views\\Aloo\\Index.css"
+    },
+    {
       "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\css\\Views\\Contatos\\Index.css",
       "PackagePath": "staticwebassets\\css\\Views\\Contatos\\Index.css"
     },
@@ -75,6 +79,10 @@
     {
       "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\fotos\\oi",
       "PackagePath": "staticwebassets\\fotos"
+    },
+    {
+      "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\js\\Views\\Aloo\\Index.js",
+      "PackagePath": "staticwebassets\\js\\Views\\Aloo\\Index.js"
     },
     {
       "Id": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\wwwroot\\js\\Views\\Contatos\\Criar.js",
