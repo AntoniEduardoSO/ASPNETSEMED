@@ -15,95 +15,56 @@
 <div class="card mb-3">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="~/fotos/impressora/cadastro_impressora.png" class="img-fluid rounded-start h-100" alt="...">
+      <img src="~/fotos/impressora/cadastro_impressora.png" class="img-fluid rounded-start" alt="...">
     </div>
+
     <div class="col-md-8">
-      <div class="card-body">
-        <div class="text-center">
-          <form asp-controller="Impressora" asp-action="Criar" method="post">
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <label class="display-7">ID</label>
-                <input type="text" asp-for="Id" class="form-control" required>
-              </div>
-              <div class="col-md-6">
-                <label class="display-6">Nome</label>
-                <input type="text" asp-for="Nome" class="form-control" required>
+
+      <div class="card-body" style="margin-left: 10px;">
+        <div class="container px-1">
+          <div class="row gy-4">
+
+            <div class="col-6">
+              <input>
+            </div>
+
+            <div class="col-6">
+
+              <div class="p-3 border">Custom column padding
+
               </div>
             </div>
 
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <label class="display-6">Setor</label>
-                <input type="text" asp-for="Setor" class="form-control" required>
-              </div>
-              <div class="col-md-6">
-                <label class="display-6">Sigla</label>
-                <input type="text" asp-for="Sigla" class="form-control">
-              </div>
+            <div class="col-6">
+              <div class="p-3 border">Custom column padding</div>
             </div>
 
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <label class="display-6">Modelo</label>
-                <input type="text" asp-for="Modelo" class="form-control" required>
-              </div>
-              <div class="col-md-6">
-                <label class="display-6">IP</label>
-                <input type="text" asp-for="Ip" class="form-control">
-              </div>
+            <div class="col-6">
+              <div class="p-3 border">Custom column padding</div>
             </div>
 
-            <div class="row mb-3">
-              <div class="col-md-6">
-                <label class="display-6">PrintPage</label>
-                <input type="text" asp-for="Printpage" class="form-control">
-              </div>
-              <div class="col-md-6">
-                <label class="display-6">Status</label>
-                <input type="text" asp-for="Status" class="form-control" required>
-              </div>
+            <div class="col-6">
+              <div class="p-3 border">Custom column padding</div>
             </div>
-          </form>
 
-          @* <a class="btn btn-secondary" asp-controller="Contatos" asp-action="Index" role="button">Voltar</a> *@
-            @* <button type="submit" class="btn btn-success">Cadastrar</button> *@
+            <div class="col-6">
+              <div class="p-3 border">Custom column padding</div>
+            </div>
+
+            <div class="col-6">
+              <div class="button-row mt-auto">
+            <a class="btn-back btn btn-secondary"  asp-controller="Contatos" asp-action="Index" role="button">Voltar</a>
+            <button type="submit" class="btn-singup btn btn-success">Cadastrar</button>
+            </div>
+            </div>
+            
+
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-
-<br>
-
-
-
-<div class="row my-6">
-
-
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-
-
 
 
 

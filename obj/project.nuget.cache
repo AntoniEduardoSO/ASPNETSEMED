@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/88y9d6uScku125r5mAmAp3l6Ctufyus6/cTVR1/AImRHg+DK4tkKVDHTAHlWprGqyQQ0Q6MpBHgaF2MFDKnKA==",
+  "dgSpecHash": "WxlK3zFH6DDMghH+2PT2/jmlgmCD83rhIRSjIqjkiT3ypgGiVPfqZGEJXp/K4NRadkngAOV+pJCUgVASmt/Ivg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\ASPNETSEMED.csproj",
+  "projectFilePath": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\ASPNETSEMED\\ASPNETSEMED.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\antoniooliveira\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\antoniooliveira\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.5\\microsoft.aspnetcore.authentication.jwtbearer.8.0.5.nupkg.sha512",

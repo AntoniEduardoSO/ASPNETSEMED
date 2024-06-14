@@ -11,49 +11,36 @@
     align-items: center;
 }
 
-.img-fluid {
-    height: 100%;
-    object-fit: cover; /* Adapte a imagem para cobrir todo o espaço da coluna */
-}
-
-/* .card
-{
-    color: white;
-    background-color: #2B303D;
-} */
-
 .row 
 {
     border-radius: 0.5rem;
     background-color:  #191F2C;
 }
 
-.img-fluid {
-    height: 100%;
-    object-fit: cover;
-    min-width: 500px;
-}
-
-/* .card{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-} */
-
 .card-body
 {
     color: white;
-    margin-left: 5rem;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.col{
-    background-color:  #2B303D;
-    
-    /* margin-left: 3rem; */
-}
+
 
 .form-control{
     width: 250px;
     margin-left: 1rem;
+}
+
+.button-row
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-back{
+    width: 50%;
+}
+
+.btn-singup{
+    width: 50%;
 }

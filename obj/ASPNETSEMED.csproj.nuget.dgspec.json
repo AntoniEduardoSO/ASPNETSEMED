@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\ASPNETSEMED.csproj": {}
+    "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\ASPNETSEMED\\ASPNETSEMED.csproj": {}
   },
   "projects": {
-    "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\ASPNETSEMED.csproj": {
+    "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\ASPNETSEMED\\ASPNETSEMED.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\ASPNETSEMED.csproj",
+        "projectUniqueName": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\ASPNETSEMED\\ASPNETSEMED.csproj",
         "projectName": "ASPNETSEMED",
-        "projectPath": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\ASPNETSEMED.csproj",
+        "projectPath": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\ASPNETSEMED\\ASPNETSEMED.csproj",
         "packagesPath": "C:\\Users\\antoniooliveira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\aspnetsemed\\obj\\",
+        "outputPath": "C:\\Users\\antoniooliveira\\Documents\\ASPNET\\ASPNETSEMED\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\antoniooliveira\\AppData\\Roaming\\NuGet\\NuGet.Config",
